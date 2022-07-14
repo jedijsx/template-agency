@@ -1,0 +1,8 @@
+.vscode/
+.DS_Store
+scss/
+node_modules/
+.csscomb.json
+gulpfile.js
+package-lock.json
+package.json
