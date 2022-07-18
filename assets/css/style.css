@@ -63,14 +63,21 @@ table {
   padding: 0 10px;
 }
 
-.link-active {
+.link--active {
   padding-bottom: 6px;
   border-bottom: 2px solid #4fba6f;
 }
 
-.btn-primary {
+.btn--primary {
   background-color: #181818;
   color: #ffffff;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
 }
 
 body {
@@ -79,6 +86,12 @@ body {
   font-weight: 400;
   line-height: 1.5;
   font-size: 14px;
+}
+
+h1, h2 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  line-height: 1.2;
 }
 
 a {
@@ -130,4 +143,42 @@ a {
   background-color: #4fba6f;
   border-color: #4fba6f;
   color: #ffffff;
+}
+
+.hero {
+  padding: 120px 0 80px;
+}
+.hero__slogan {
+  font-size: 18px;
+}
+.hero__title {
+  font-size: 56px;
+  max-width: 700px;
+  margin: 8px 0 80px;
+}
+.hero__title-highlith {
+  color: #4fba6f;
+}
+.hero__btn {
+  display: inline-block;
+  padding: 12px 24px;
+  height: 48px;
+  background-color: #4fba6f;
+  color: #ffffff;
+  margin-right: 32px;
+}
+.hero__link {
+  display: inline-block;
+  color: #4fba6f;
+  padding-left: 30px;
+  position: relative;
+}
+.hero__link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -2px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/icon-play.svg");
 }
