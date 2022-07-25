@@ -1,0 +1,41 @@
+@use "presets" as *;
+
+.header {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  }
+}
+
+.menu {
+  margin-left: auto;
+
+  &__list {
+    display: flex;
+    gap: 40px;
+
+    &-link:hover {
+      color: $color-active;
+    }
+  }
+}
+
+.user-actions {
+  margin-left: 40px;
+  display: flex;
+  gap: 16px;
+
+  &__btn {
+    display: flex;
+    border: 2px solid $color-primary;
+    padding: 12px 24px;
+  }
+
+  &__btn:hover {
+    background-color: $color-active;
+    border-color: $color-active;
+    color: $color-secondary;
+  }
+}

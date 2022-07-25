@@ -1,0 +1,28 @@
+@use "presets" as *;
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.link--active {
+  padding-bottom: 6px;
+  border-bottom: 2px solid $color-active;
+}
+
+.btn--primary {
+  background-color: $color-primary;
+  color: $color-secondary;
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}

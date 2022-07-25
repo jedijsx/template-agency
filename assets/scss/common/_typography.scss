@@ -1,0 +1,20 @@
+@use "presets" as *;
+
+body {
+  color: $color-primary;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+h1, h2 {
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: $color-primary;
+}
