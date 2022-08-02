@@ -1,0 +1,67 @@
+@use "presets" as *;
+
+.projects {
+  padding: 120px 0;
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+
+    &-content {
+      max-width: 540px;
+    }
+
+    &-info {
+      font-size: 12px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    &-title {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 32px;
+    }
+
+    &-description {
+      font-size: 20px;
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+
+    &-subtitle {
+      padding-left: 8px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      border-left: 4px solid $color-active;
+    }
+
+    &-subdescription {
+      padding-left: 12px;
+      margin-bottom: 24px;
+    }
+
+    &-cover {
+      width: 480px;
+      height: 400px;
+    }
+  }
+
+  &__list-item {
+    margin-bottom: 24px;
+    padding-left: 40px;
+    position: relative;
+  }
+
+  &__list-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -2px;
+    height: 24px;
+    width: 24px;
+    background-image: url('../img/projects/arrow.svg');
+  }
+}

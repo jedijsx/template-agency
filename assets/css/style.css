@@ -201,7 +201,7 @@ a {
   background-position: center bottom;
   background-size: cover;
 }
-.services__subtitle {
+.services__pretitle {
   margin: 0 auto 16px;
   text-align: center;
 }
@@ -245,4 +245,64 @@ a {
 }
 .services__btn:hover {
   background-color: #181818;
+}
+
+.projects {
+  padding: 120px 0;
+}
+.projects__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 100px;
+}
+.projects__item-content {
+  max-width: 540px;
+}
+.projects__item-info {
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.projects__item-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+.projects__item-description {
+  font-size: 20px;
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+.projects__item-subtitle {
+  padding-left: 8px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  border-left: 4px solid #4fba6f;
+}
+.projects__item-subdescription {
+  padding-left: 12px;
+  margin-bottom: 24px;
+}
+.projects__item-cover {
+  width: 480px;
+  height: 400px;
+}
+.projects__list-item {
+  margin-bottom: 24px;
+  padding-left: 40px;
+  position: relative;
+}
+.projects__list-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -2px;
+  height: 24px;
+  width: 24px;
+  background-image: url("../img/projects/arrow.svg");
 }
