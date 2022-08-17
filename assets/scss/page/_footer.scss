@@ -1,1 +1,79 @@
 @use "presets" as *;
+
+.footer {
+  &__inner {
+    padding: 100px 0;
+    border-top: 1px solid $color-primary;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__menu {
+    width: 140px;
+
+    &-title {
+      margin-bottom: 24px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: $color-info;
+    }
+  }
+
+  &__list-link {
+    line-height: 2.4;
+    transition: all .2s;
+  }
+
+  &__list-link:hover {
+    color: $color-active;
+  }
+
+  &__form {
+    width: 300px;
+
+    &-description {
+      font-weight: 700;
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+
+    &-input {
+      height: 48px;
+      padding: 0 16px;
+      border: 2px solid $color-primary;
+      border-radius: 0;
+      width: 100%;
+      margin-bottom: 16px;
+      display: inline-block;
+      transition: all .2s;
+    }
+
+    &-input::placeholder {
+      color: $color-info;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    &-input:hover {
+      border: 2px solid $color-active;
+    }
+
+    &-input:focus {
+      outline: none;
+      border: 2px solid $color-active;
+    }
+
+    &-btn {
+      display: inline-block;
+      padding: 12px 24px;
+      height: 48px;
+      transition: all .2s;
+      color: $color-secondary;
+      background-color: $color-active;
+    }
+
+    &-btn:hover {
+      background-color: $color-primary;
+    }
+  }
+}

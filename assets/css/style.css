@@ -83,7 +83,6 @@ table {
 
 .slick-list.dragging {
   cursor: pointer;
-  cursor: hand;
 }
 
 .slick-slider .slick-track,
@@ -596,4 +595,98 @@ a {
 
 .slick-dots .slick-active button {
   background-color: #4fba6f;
+}
+
+.footer__inner {
+  padding: 100px 0;
+  border-top: 1px solid #181818;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__menu {
+  width: 140px;
+}
+.footer__menu-title {
+  margin-bottom: 24px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #90a796;
+}
+.footer__list-link {
+  line-height: 2.4;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.footer__list-link:hover {
+  color: #4fba6f;
+}
+.footer__form {
+  width: 300px;
+}
+.footer__form-description {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+.footer__form-input {
+  height: 48px;
+  padding: 0 16px;
+  border: 2px solid #181818;
+  border-radius: 0;
+  width: 100%;
+  margin-bottom: 16px;
+  display: inline-block;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.footer__form-input::-webkit-input-placeholder {
+  color: #90a796;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.footer__form-input::-moz-placeholder {
+  color: #90a796;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.footer__form-input:-ms-input-placeholder {
+  color: #90a796;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.footer__form-input::-ms-input-placeholder {
+  color: #90a796;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.footer__form-input::placeholder {
+  color: #90a796;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.footer__form-input:hover {
+  border: 2px solid #4fba6f;
+}
+.footer__form-input:focus {
+  outline: none;
+  border: 2px solid #4fba6f;
+}
+.footer__form-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  height: 48px;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  color: #ffffff;
+  background-color: #4fba6f;
+}
+.footer__form-btn:hover {
+  background-color: #181818;
 }
