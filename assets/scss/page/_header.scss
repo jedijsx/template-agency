@@ -12,12 +12,46 @@
 .menu {
   margin-left: auto;
 
+  &__btn {
+    width: 40px;
+    height: 32px;
+    display: none;
+  }
+
+  &__btn span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: $color-primary;
+    position: absolute;
+    left: 0;
+    top: 16px;
+  }
+
+  &__btn::before,
+  &__btn::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: $color-primary;
+    left: 0;
+  }
+
+  &__btn::before {
+    top: 0;
+  }
+
+  &__btn::after {
+    bottom: 0;
+  }
+  
   &__list {
     display: flex;
     gap: 40px;
 
     &-link:hover {
-      color: $color-active;
+      color: $color-primary;
     }
   }
 }
