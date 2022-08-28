@@ -19,10 +19,15 @@
     background-image: none;
     padding: 64px 0;
   }
-}
 
-@media (max-width: 768px) {
+  .services__items {
+    flex-wrap: wrap;
+    gap: 56px;
+  }
 
+  .services__item {
+    width: 40%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -67,5 +72,25 @@
   .hero__title {
     font-size: 32px;
     margin-bottom: 48px;
+  }
+
+  .services__pretitle {
+    text-align: left;
+  }
+
+  .services__title {
+    font-size: 24px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 420px) {
+  .services {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .services__item {
+    width: 88%;
   }
 }
